@@ -104,12 +104,10 @@
               </div>
               <div class="col-lg-6">
                 <h2>Search for highly energetic double Higgs boson production in the two bottom quark and two vector boson all-hadronic final state</h2>
-                <p> A search for standard model (SM) nonresonant Higgs boson pair (\(\mathrm{HH}\)) production is performed in the two bottom quark (\(\mathrm{b\overline{b}}\)) and all-hadronic two vector boson (\(\mathrm{VV}\to\mathrm{4q}\)) final states.
+                <p>A search for standard model (SM) nonresonant Higgs boson pair (\(\mathrm{HH}\)) production is performed in the two bottom quark (\(\mathrm{b\overline{b}}\)) and all-hadronic two vector boson (\(\mathrm{VV}\to\mathrm{4q}\)) final states.
                   The search is carried out in proton-proton collisions at \(13\,\mathrm{TeV}\) with a data set corresponding to a total luminosity of \(138\,\mathrm{fb}^{-1}\).
                   It selects for highly Lorentz-boosted HH events, where each Higgs boson's daughter quarks are all merged inside a single anti-\(k_\mathrm{T}\) \(R = 0.8\) jet and introduces the new global particle transformer (GloParT) classifier to effectively perform boosted \(\mathrm{VV}\to\mathrm{4q}\) jet identification.
-                  The multiplicative modifier of the SM quartic coupling between two Higgs bosons and two vector bosons is observed (expected) to be constrained at \(95\%\) confidence level to \(\kappa_\mathrm{2V} \in [-0.04, 2.05]\) (\([0.05, 1.98]\)).
-                                
-                </p>
+                  The multiplicative modifier of the SM quartic coupling between two Higgs bosons and two vector bosons is observed (expected) to be constrained at \(95\%\) confidence level to \(\kappa_\mathrm{2V} \in [-0.04, 2.05]\) (\([0.05, 1.98]\)).</p>
                 <p>PAS: <a href="https://cds.cern.ch/record/2904879">CMS-PAS-HIG-23-012</a>
                   <br>Figures: <a
                     href="https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIG-23-012">https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIG-23-012</a>
@@ -117,6 +115,30 @@
                   <br>3D Event display: <a href="https://cms3d.web.cern.ch/HIG-23-012/">CMS-HIG-23-012</a>
               </div>
             </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid rounded mb-4" src="images/HEPT.png" alt="" width="500">
+              </div>
+              <div class="col-lg-6">
+                <h2>Locality-Sensitive Hashing-Based Efficient Point Transformer with Applications in High-Energy Physics</h2>
+                <p>This study introduces a novel transformer model optimized for large-scale point cloud processing in scientific domains such as high-energy physics (HEP) and astrophysics. Addressing the limitations of graph neural networks and standard transformers, our model integrates local inductive bias and achieves near-linear complexity with hardware-friendly regular operations. One contribution of this work is the quantitative analysis of the error-complexity tradeoff of various sparsification techniques for building efficient transformers. Our findings highlight the superiority of using locality-sensitive hashing (LSH), especially OR & AND-construction LSH, in kernel approximation for large-scale point cloud data with local inductive bias. Based on this finding, we propose LSH-based Efficient Point Transformer (HEPT), which combines E2LSH with OR & AND constructions and is built upon regular computations. HEPT demonstrates remarkable performance on two critical yet time-consuming HEP tasks, significantly outperforming existing GNNs and transformers in accuracy and computational speed, marking a significant advancement in geometric deep learning and large-scale scientific data processing.</p>
+                <p>Paper: <a href="https://arxiv.org/abs/2402.12535">arXiv:2402.12535</a>
+                  <br>Code: <a
+                    href="https://github.com/Graph-COM/HEPT">https://github.com/Graph-COM/HEPT</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid rounded mb-4" src="images/models.png" alt="" width="500">
+              </div>
+              <div class="col-lg-6">
+                <h2>Ultrafast jet classification on FPGAs for the HL-LHC</h2>
+                <p>Three machine learning models are used to perform jet origin classification. These models are optimized for deployment on a field-programmable gate array device. In this context, we demonstrate how latency and resource consumption scale with the input size and choice of algorithm. Moreover, the models proposed here are designed to work on the type of data and under the foreseen conditions at the CERN LHC during its high-luminosity phase. Through quantization-aware training and efficient synthetization for a specific field programmable gate array, we show that \(\mathcal{O}(100)\) ns inference of complex architectures such as Deep Sets and Interaction Networks is feasible at a relatively low computational resource cost.</p>
+                <p>Paper: <a href="https://doi.org/10.1088/2632-2153/ad5f10">Mach. Learn.: Sci. Technol. 5, 035017 (2024)</a>
+                  <br>Code: <a
+                    href="https://github.com/fastmachinelearning/l1-jet-id">https://github.com/fastmachinelearning/l1-jet-id</a>
+              </div>
+            </div>          
             <div class="row">
               <div class="col-lg-6">
                 <img class="img-fluid rounded mb-4" src="images/sophon.png" alt="" width="500">
@@ -165,20 +187,9 @@
           <img class="img-fluid rounded mb-4" src="images/visual_abstract.png" alt="" width="500">
         </div>
         <div class="col-lg-6">
-          <h2>Scalable neural network models and terascale datasets for particle-flow reconstruction</h2>
-          <p>We study scalable machine learning models for full event reconstruction in high-energy electron-positron
-            collisions based on a highly granular detector simulation. Particle-flow (PF) reconstruction can be
-            formulated as a supervised learning task using tracks and calorimeter clusters or hits. We compare a graph
-            neural network and kernel-based transformer and demonstrate that both avoid quadratic memory allocation and
-            computational cost while achieving realistic PF reconstruction. We show that hyperparameter tuning on a
-            supercomputer significantly enhances the physics performance of the models, improving the jet transverse
-            momentum resolution by up to 50% compared to the baseline. The resulting model is highly portable across
-            hardware processors, supporting Nvidia, AMD, and Intel Habana cards. Finally, we demonstrate that the model
-            can be trained on highly granular inputs consisting of tracks and calorimeter hits, resulting in a
-            competitive physics performance with the baseline. Datasets and software to reproduce the studies are
-            published following the findable, accessible, interoperable, and reusable (FAIR) principles.
-          </p>
-          <p>Paper: <a href="https://arxiv.org/abs/2309.06782">arXiv:2309.06782</a>
+          <h2>Improved particle-flow event reconstruction with scalable neural networks for current and future particle detectors</h2>
+          <p>Efficient and accurate algorithms are necessary to reconstruct particles in the highly granular detectors anticipated at the High-Luminosity Large Hadron Collider and the Future Circular Collider. We study scalable machine learning models for event reconstruction in electron-positron collisions based on a full detector simulation. Particle-flow reconstruction can be formulated as a supervised learning task using tracks and calorimeter clusters. We compare a graph neural network and kernel-based transformer and demonstrate that we can avoid quadratic operations while achieving realistic reconstruction. We show that hyperparameter tuning significantly improves the performance of the models. The best graph neural network model shows improvement in the jet transverse momentum resolution by up to 50% compared to the rule-based algorithm. The resulting model is portable across Nvidia, AMD and Habana hardware. Accurate and fast machine-learning based reconstruction can significantly improve future measurements at colliders.</p>
+          <p>Paper: <a href="https://doi.org/10.1038/s42005-024-01599-5">Commun. Phys. 7, 124 (2024)</a>
             <br>Code: <a href="https://github.com/jpata/particleflow">https://github.com/jpata/particleflow</a>
         </div>
       </div>
@@ -199,7 +210,7 @@
             trained using the differentiable EMD CNN surpasses that of training with loss functions based on mean
             squared error.
           </p>
-          <p>Paper: <a href="https://arxiv.org/abs/2306.04712">arXiv:2306.04712</a>
+          <p>Paper: <a href="https://doi.org/10.1088/2632-2153/ad1139">Mach. Learn.: Sci. Technol. 4, 045058 (2023)</a>
             <br>Code: <a href="https://github.com/rohanshenoy/Ecoder">https://github.com/rohanshenoy/Ecoder</a>
         </div>
       </div>
@@ -246,7 +257,7 @@
             generative adversarial particle transformer to the state-of-the-art message-passing generative adversarial
             network jet simulation model.
           </p>
-          <p>Paper: <a href="https://arxiv.org/abs/2211.10295">arXiv:2211.10295</a>
+          <p>Paper: <a href="https://doi.org/10.1103/PhysRevD.107.076017">Phys. Rev. D 107, 076017 (2023)</a>
             <br>Code: <a href="https://github.com/rkansal47/MPGAN">https://github.com/rkansal47/MPGAN</a>
         </div>
       </div>
@@ -293,7 +304,7 @@
             couplings, \(\kappa_{2V}\), excluding \(\kappa_{2V}=0\) for the first time, with a significance of 6.3
             standard deviations when other H couplings are fixed to their standard model values.
           </p>
-          <p>Paper: <a href="https://arxiv.org/abs/2205.06667">arXiv:2205.06667</a>
+          <p>Paper: <a href="https://doi.org/10.1103/PhysRevLett.131.041803">	Phys. Rev. Lett. 131, 041803 (2023)</a>
             <br>Figures: <a
               href="https://cms-results.web.cern.ch/cms-results/public-results/publications/B2G-22-003/index.html">https://cms-results.web.cern.ch/cms-results/public-results/publications/B2G-22-003/index.html</a>
         </div>
@@ -388,7 +399,7 @@
             with,
             and set MPGAN as a benchmark to improve upon for future generative models.
           </p>
-          <p>Paper: <a href="https://arxiv.org/abs/2106.11535">arXiv:2106.11535</a>
+          <p>Paper: <a href="https://proceedings.neurips.cc/paper/2021/hash/c8512d142a2d849725f31a9a7a361ab9-Abstract.html">NeurIPS 34, 23858 (2021)</a>
             <br>Code: <a href="https://github.com/rkansal47/MPGAN">https://github.com/rkansal47/MPGAN</a>
         </div>
       </div>
